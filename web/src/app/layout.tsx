@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Syne } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 /* ---------- Font Loading ----------
@@ -59,6 +60,7 @@ export default function RootLayout({
       className={`${jakarta.variable} ${syne.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
+      <GoogleAnalytics gaId="G-6MX1C3FHNS" />
     </html>
   );
 }
